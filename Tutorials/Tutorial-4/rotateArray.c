@@ -10,23 +10,20 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    printf("Enter the number of rotations: ");
-    scanf("%d", &rotations);
-
-    for (i = 0; i < rotations; i++) {
+    
+    for(int rotations = 0; rotations < n; rotations++){
         temp = arr[0];
         for (int j = 0; j < n - 1; j++) {
             arr[j] = arr[j + 1];
         }
-        arr[n - 1] = temp;
-    }
+        arr[n - 1] = temp;        
 
-    printf("Array after rotation: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("Array after rotation: ");
+        for (i = 0; i < n; i++) {
+            printf("%d ", arr[i]);
+        }
+        printf("\n");
     }
-    printf("\n");
 
     return 0;
 }
