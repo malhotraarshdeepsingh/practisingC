@@ -11,8 +11,8 @@ int main(){
 
 #include<stdio.h>
 int main(){
-    int n=1, i=1, AH[] = {14, 34, 9, 1, -5, 2, 8, 11, 15, 31}, x;
-    int smallest = AH[0], secondSmallest;
+    int n=10, i, AH[] = {14, 34, 9, 1, -5, 2, 8, 11, 15, 31}, x;
+    int smallest = AH[0], secondSmallest=0;
 
     for(i = 1; i < n; i++) {
         if (AH[i] < smallest) {
