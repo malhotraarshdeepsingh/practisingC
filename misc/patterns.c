@@ -118,7 +118,27 @@ int main(){
     }
     printf("\n");
   }
-  
+
+  printf("\n");
+  printf("Code 6 Output:-\n");
+  printf("\n");
+  /*
+  ABCDEDCBA
+  ABCDCBA
+  ABCBA
+  ABA
+  A
+  */
+
+  for(i=5; i>=1; i--){
+    for(j=0; j<i; j++){
+      printf("%c", 'A'+j);
+    }
+    for (int j=i-2; j>= 0; j--) {
+      printf("%c", 'A'+j);
+    }
+    printf("\n");
+  }
 
   printf("\n");
   return 0;
