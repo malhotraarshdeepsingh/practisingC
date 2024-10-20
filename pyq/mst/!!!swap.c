@@ -7,9 +7,6 @@ int main() {
     // Input string from the user
     printf("Enter a string: ");
     scanf("%[^\n]", str);
-
-    // Initialize words and rest
-    word1[0] = word2[0] = word3[0] = rest[0] = '\0';
     
     // Parse the string word by word
     for (i = 0, j = 0; str[i] != '\0'; i++) {
