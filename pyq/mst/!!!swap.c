@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char str[100], word1[20], word2[20], word3[20], rest[100];
     int i = 0, j = 0, word_count = 0;
-
+    // Input string from the user
     printf("Enter a string: ");
-    gets(str);
-
-    word1[0] = word2[0] = word3[0] = rest[0] = '\0';
-
+    fgets(str, sizeof(str), stdin); 
+    // Variables to store wordss
+    word1[0] = '\0';
+    word2[0] = '\0';
+    word3[0] = '\0';
+    rest[0] = '\0';
     // Parse the string word by word
     for (i = 0, j = 0; str[i] != '\0'; i++) {
         if (str[i] == ' ' || str[i] == '\n') {
@@ -45,9 +46,7 @@ int main() {
     if (j > 0 && word_count == 3) {
         strncat(rest, &str[i - j], j);
     }
-
     // Output the result with the second and third words swapped
     printf("Output: %s %s %s %s\n", word1, word3, word2, rest);
-
     return 0;
 }
