@@ -34,7 +34,7 @@ int main() {
     // Flatten the array to shift and insert new value
     int flatArray[total_elements + 1];  // Increase size to hold the new element
     int k = 0;
-    for (i = 0; i < n && i < total_elements / m; i++) {
+    for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
             flatArray[k++] = arr[i][j];
         }

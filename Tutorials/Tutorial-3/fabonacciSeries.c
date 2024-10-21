@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-int fib(int n);
-
 int main(){
     int n, first=0, second=1, next;
     printf("Enter the number: ");
