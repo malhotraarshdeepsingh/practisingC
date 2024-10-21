@@ -8,7 +8,7 @@ int main(){
     if (number <= 1) {
         isPrime = 0;
     } else {
-        for (i = 2; i * i <= number; i++) {
+        for (i = 2; i <= number/2; i++) {
             if (number % i == 0) {
                 isPrime = 0;
                 break;

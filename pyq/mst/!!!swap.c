@@ -11,7 +11,7 @@ int main() {
     // Parse the string word by word
     for (i = 0, j = 0; str[i] != '\0'; i++) {
         // If a space is encountered, finalize the current word
-        if (str[i] == ' ' || str[i] == '\n') {
+        if (str[i] == ' ') {
             word_count++;
             if (word_count == 1) { // Store first word
                 word1[j] = '\0';
@@ -41,11 +41,7 @@ int main() {
     
     // Finalize the last word if necessary
     if (j > 0) {
-        if (word_count == 2) {
-            word3[j] = '\0'; // If there were exactly 3 words
-        } else {
-            rest[j] = '\0'; // Null terminate the remaining part
-        }
+        rest[j] = '\0'; // Null terminate the remaining part
     }
     
     // Output the result with the second and third words swapped
