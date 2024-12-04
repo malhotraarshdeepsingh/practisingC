@@ -16,7 +16,7 @@ int main() {
         return 1;
     }
 
-    while (fscanf(file, "%d %d", &rollNo, &marks) == 2) {
+    while (fscanf(file, "%d %d", &rollNo, &marks)) {
         if (rollNo == -9999) {
             break;
         }

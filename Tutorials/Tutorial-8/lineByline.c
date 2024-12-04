@@ -12,7 +12,7 @@ int main() {
     }
 
     printf("Contents of Story.txt:\n");
-    while (fgets(line, sizeof(line), file) != NULL) {
+    while (fgets(line, sizeof(line), file)) {
         printf("%s", line);
     }
 
